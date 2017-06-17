@@ -21,10 +21,6 @@ class Router {
     $method = $_SERVER['REQUEST_METHOD'];
     $path = parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH);
 
-    error_log('$method'.print_r($method,1));
-    error_log('$_GET'.print_r($_GET,1));
-    error_log('json'.print_r(file_get_contents("php://input"),1));
-
     if($method == 'GET' && isset($_GET)){
       $params = $this->paramsParser($_GET, 'GET');
     }else{
