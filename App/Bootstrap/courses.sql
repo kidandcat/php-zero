@@ -1,3 +1,5 @@
+DROP TABLE course;
+
 CREATE TABLE course (
     title varchar(255),
     description varchar(255),

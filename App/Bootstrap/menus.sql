@@ -1,3 +1,5 @@
+DROP TABLE menu;
+
 CREATE TABLE menu (
   name varchar(255),
   link varchar(255)

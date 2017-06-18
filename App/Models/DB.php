@@ -17,6 +17,8 @@ class DB {
 
   public function query(String $sql, Array $parameters = []){
     $sth = self::$connection->prepare($sql);
+    //TODO: must fix this code to be able to store other data types
+    //more than strings in the database
     // foreach ($parameters as $key => $value) {
     //   $k = $key+1;
     //   $sth->bindParam($k,$value);

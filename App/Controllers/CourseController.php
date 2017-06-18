@@ -25,7 +25,6 @@ class CourseController {
 
     $res = $this->course->create($params['title'], $params['descrition'], $params['image']);
 
-    error_log('res'.print_r($res,1));
     return new Response(200);
   }
 

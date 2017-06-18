@@ -31,7 +31,7 @@ class Menu {
     return $this->getOneBy('link', $link);
   }
 
-  public function getOneBy($param, $value){
+  private function getOneBy($param, $value){
     return $this->db->queryOne('SELECT * FROM menu WHERE ? = ?', [
       $param,
       $value

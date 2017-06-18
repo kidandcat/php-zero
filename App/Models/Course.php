@@ -35,7 +35,7 @@ class Course {
     return $this->getOneBy('image', $image);
   }
 
-  public function getOneBy($param, $value){
+  private function getOneBy($param, $value){
     return $this->db->queryOne('SELECT * FROM course WHERE ? = ?', [
       $param,
       $value
